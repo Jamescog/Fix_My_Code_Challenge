@@ -1,14 +1,18 @@
 #!/usr/bin/python3
 """
-Documantation of this 
+This script contains fixed code for task 1
 """
 class square():
+    """Defines the class square
+    """
     
     width = 0
     height = 0
 
     
     def __init__(self, *args, **kwargs):
+        """Initialize the class with key word arguments
+        """
         for key, value in kwargs.items():
             setattr(self, key, value)
 
@@ -17,10 +21,13 @@ class square():
         return self.height * self.width
 
     def PermiterOfMySquare(self):
+        """Computes the parameter of the square
+        """
         return (self.width * 2) + (self.height * 2)
 
     def __str__(self):
         return "{}/{}".format(self.width, self.height)
+
 
 if __name__ == "__main__":
 
