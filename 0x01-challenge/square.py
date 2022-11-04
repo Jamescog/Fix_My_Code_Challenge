@@ -2,7 +2,7 @@
 """
 This script contains fixed code for task 1
 """
-class square():
+class Square():
     """Defines the class square
     """
     
